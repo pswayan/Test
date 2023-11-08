@@ -1,0 +1,51 @@
+2023-11-06 17:16:26,710 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.27:5000
+2023-11-06 17:16:26,710 [INFO] - [33mPress CTRL+C to quit[0m
+2023-11-06 17:17:12,083 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:17:12] "POST /upload HTTP/1.1" 200 -
+2023-11-06 17:17:58,910 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:17:58] "POST /upload HTTP/1.1" 200 -
+2023-11-06 17:18:09,961 [ERROR] - Exception on /fetchTsn [GET]
+Traceback (most recent call last):
+  File "C:\Users\swapanda\AppData\Local\anaconda3\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\swapanda\AppData\Local\anaconda3\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\swapanda\AppData\Local\anaconda3\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\swapanda\AppData\Local\anaconda3\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\swapanda\Pictures\sikun\Test Data\finalcode.py", line 167, in get_tsn
+    data_count = count_non_empty_rows(default_path) -1
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\swapanda\Pictures\sikun\Test Data\finalcode.py", line 71, in count_non_empty_rows
+    with open(file_path, 'r') as file:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'TestData\\tsn_list.csv'
+2023-11-06 17:18:09,962 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:18:09] "[35m[1mGET /fetchTsn?API-Key=api_key_2&Username=acm1508 HTTP/1.1[0m" 500 -
+2023-11-06 17:18:49,784 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:18:49] "GET /merge_csv HTTP/1.1" 200 -
+2023-11-06 17:19:09,151 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:19:09] "GET /fetchTsn?API-Key=api_key_2&Username=acm1508 HTTP/1.1" 200 -
+2023-11-06 17:21:24,103 [ERROR] - Access forbidden. Invalid API key or user not in the IT-QE team
+2023-11-06 17:21:24,104 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:21:24] "[31m[1mGET /fetchTsn?API-Key=api_key_2&Username=acm1508 HTTP/1.1[0m" 403 -
+2023-11-06 17:21:56,279 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-06 17:21:56,279 [INFO] - [33mPress CTRL+C to quit[0m
+2023-11-06 17:21:56,311 [INFO] -  * Restarting with watchdog (windowsapi)
+2023-11-06 17:22:10,662 [ERROR] - Access forbidden. Invalid API key or user not in the IT-QE team
+2023-11-06 17:22:10,664 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:22:10] "[31m[1mGET /fetchTsn?API-Key=api_key_2&Username=acm1508 HTTP/1.1[0m" 403 -
+2023-11-06 17:22:17,093 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:22:17] "POST /upload HTTP/1.1" 200 -
+2023-11-06 17:23:02,286 [WARNING] -  * Debugger is active!
+2023-11-06 17:23:02,308 [INFO] -  * Debugger PIN: 876-628-032
+2023-11-06 17:26:00,886 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-06 17:26:00,887 [INFO] - [33mPress CTRL+C to quit[0m
+2023-11-06 17:26:00,914 [INFO] -  * Restarting with watchdog (windowsapi)
+2023-11-06 17:26:01,367 [WARNING] -  * Debugger is active!
+2023-11-06 17:26:01,370 [INFO] -  * Debugger PIN: 876-628-032
+2023-11-06 17:26:05,276 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:26:05] "POST /upload HTTP/1.1" 200 -
+2023-11-06 17:26:32,596 [ERROR] - Access forbidden. Invalid API key or user not in the IT-QE team
+2023-11-06 17:26:32,596 [INFO] - 127.0.0.1 - - [06/Nov/2023 17:26:32] "[31m[1mGET /fetchTsn?API-Key=api_key_2&Username=acm1508 HTTP/1.1[0m" 403 -
